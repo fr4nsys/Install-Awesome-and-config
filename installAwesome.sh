@@ -1,4 +1,4 @@
-sudo pacman -S git unzip gnome kitty gedit firefox zip feh ntfs-3g zsh zsh-autosuggestions zsh-syntax-highlighting bat lsd neovim neofetch --noconfirm
+sudo pacman -S git unzip gnome kitty gedit firefox zip feh wget ntfs-3g zsh zsh-autosuggestions zsh-syntax-highlighting bat lsd neovim neofetch --noconfirm
 
 git clone https://aur.archlinux.org/paru-bin.git
 chmod 777 paru-bin
@@ -12,7 +12,7 @@ wireless_tools jq inotify-tools polkit-gnome xdotool xclip maim \
 brightnessctl alsa-utils alsa-tools lm_sensors \
 mpd mpc mpdris2 ncmpcpp playerctl --needed --noconfirm 
 
-mkdir /home/$USER/.todo/
+mkdir -p /home/$USER/.todo/
 
 systemctl --user enable mpd.service
 systemctl --user start mpd.service
@@ -23,7 +23,11 @@ paru -S awesome-git --needed --noconfirm
 
 paru -S ttf-material-design-icons nerd-fonts-complete --needed --noconfirm
 
-mkdir ~/.fonts && mv ./files/iconmoon/*.ttf ~/.fonts 
+mkdir -p ~/.fonts && mv ./files/iconmoon/*.ttf ~/.fonts 
 
 cp -r ./files/config/* ~/.config/
 cp -r ./files/misc/. ~/
+
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh
+
+sudo mkdir -p /usr/share/zsh-sudo && sudo mv sudo.plugin.zsh /usr/share/zsh-sudo/

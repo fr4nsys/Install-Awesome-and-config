@@ -1,5 +1,7 @@
 # Install Awesome and config
- This script will autoinstall Awesome Desktop with all the dependences and setup my config
+ This script will autoinstall Awesome Desktop with all the dependences and setup my config.
+
+ This script only works on Arch Linux and Arch Linux based distros.
 
  ```bash
 git clone https://github.com/fr4nsys/Install-Awesome-and-config && cd Install-Awesome-and-config && ./installAwesome.sh
@@ -40,3 +42,8 @@ git clone https://github.com/fr4nsys/Install-Awesome-and-config && cd Install-Aw
 | **mod + ctrl + l**  | lock session                    |
 | **mod + ctrl + r**  | restart awesome                 |
 | **mod + ctrl + q**  | exit session                    |
+| **mod + 1**         | switch to workspace 1           |
+| **mod + 2**         | switch to workspace 2           |
+| **mod + 3**         | switch to workspace 3           |
+| **mod + 4**         | switch to workspace 4           |
+| **mod + 5**         | switch to workspace 5           |
