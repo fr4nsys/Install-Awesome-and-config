@@ -53,5 +53,5 @@ collectgarbage("setpause", 110)
 collectgarbage("setstepmul", 1000)
 
 --Wallpaper
-local wallpaper_cmd="feh --bg-fill /home/fran/Desktop/fran/images/2.jpg"
+local wallpaper_cmd="feh --bg-fill /home/$USER/.config/awesome/theme/assets/bg.jpg"
 os.execute(wallpaper_cmd)

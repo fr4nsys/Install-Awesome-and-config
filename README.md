@@ -32,5 +32,7 @@
 | **mod + e**         | launch file explorer (nautilus) |
 | **mod + x**         | screenshot (scrot)              |
 | **mod + shift + g** | text editor (gedit)             |
-
-
+| **mod + d**         | launch apps launcher (rofi)     |
+| **mod + ctrl + l**  | lock session                    |
+| **mod + ctrl + r**  | restart awesome                 |
+| **mod + ctrl + q**  | exit session                    |

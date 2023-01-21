@@ -1,4 +1,4 @@
-sudo pacman -S git unzip kitty gedit firefox zip --noconfirm
+sudo pacman -S git unzip gnome kitty gedit firefox zip ntfs-3g zsh zsh-autosuggestions zsh-syntax-highlighting bat lsd neovim neofetch --noconfirm
 
 git clone https://aur.archlinux.org/paru-bin.git
 chmod 777 paru-bin
@@ -9,8 +9,8 @@ rm -rf paru-bin/
 
 paru -S picom-ibhagwan-git todo-bin alacritty rofi todo-bin acpi acpid \
 wireless_tools jq inotify-tools polkit-gnome xdotool xclip maim \
-brightnessctl alsa-utils alsa-tools pulseaudio lm_sensors \
-mpd mpc mpdris2 ncmpcpp playerctl zsh-autosuggestions zsh-syntax-highlighting --needed --noconfirm 
+brightnessctl alsa-utils alsa-tools lm_sensors \
+mpd mpc mpdris2 ncmpcpp playerctl --needed --noconfirm 
 
 mkdir /home/$USER/.todo/
 
@@ -23,7 +23,7 @@ paru -S awesome-git --needed --noconfirm
 
 paru -S ttf-material-design-icons nerd-fonts-complete --needed --noconfirm
 
-mv ./files/iconmoon/*.ttf ~/fonts 
+mkdir ~/.fonts && mv ./files/iconmoon/*.ttf ~/.fonts 
 
 cp -r ./files/config/* ~/.config/
 cp -r ./files/misc/. ~/
