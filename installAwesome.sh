@@ -1,4 +1,4 @@
-sudo pacman -S git unzip gnome kitty gedit firefox zip ntfs-3g zsh zsh-autosuggestions zsh-syntax-highlighting bat lsd neovim neofetch --noconfirm
+sudo pacman -S git unzip gnome kitty gedit firefox zip feh ntfs-3g zsh zsh-autosuggestions zsh-syntax-highlighting bat lsd neovim neofetch --noconfirm
 
 git clone https://aur.archlinux.org/paru-bin.git
 chmod 777 paru-bin

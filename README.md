@@ -1,6 +1,10 @@
 # Install Awesome and config
  This script will autoinstall Awesome Desktop with all the dependences and setup my config
 
+ ```bash
+git clone https://github.com/fr4nsys/Install-Awesome-and-config && cd Install-Awesome-and-config && ./installAwesome.sh
+```
+
 # Screenshots
 
 ![awesome1](images/1672079954724.jpg)
